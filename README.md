@@ -27,3 +27,6 @@ If you just came for the Profibus slave because you need it here and now to test
 
 But if what you want is to learn, or you need to add features or change the configuration of your slaves, then you need to be a bit more patient: you'll have to setup the environment, make some modifications on TI's Platform Development Kit (PDK), and compile it together with the Profibus stack and sample code. If you are not familiar with TI RTOS (a minimalist real time operating system for TI's Sitara processors) but you know your way around Eclipse or a similar development environment and makefiles and the like, it should not take longer than an afternoon to setup everything. If you did not even understand the previous sentence, no worries, I'm planning to give quite detailed instructions, but it can take significantly longer depending on your skills.
 
+## Credits and disclaimer
+
+As you'll see if you deep digger into the documentation, most of the credit belongs to TI.
