@@ -1,0 +1,123 @@
+;======================================================
+; GSD-file : application template for
+; TI's UART/DPE-Software
+; 2012
+;======================================================
+;
+;
+;======================================================
+;General parameters
+;======================================================
+#Profibus_DP
+GSD_Revision    	= 1
+
+Vendor_Name 	    = "Texas Instruments Inc"
+Model_Name 	   		= "AM335x Evaluation Module (EVM)"
+Revision 	    	= "V1.0"
+Ident_Number 	    = 0x0CDA
+Slave_Family        = 3@TI@AM335x      ; device family class
+Protocol_Ident 	    = 0
+Station_Type 	    = 0
+FMS_supp            = 0
+Hardware_Release    = "1.0"
+Software_Release    = "1.0"
+9.6_supp            = 1
+19.2_supp           = 1
+45.45_supp          = 1
+93.75_supp          = 1
+187.5_supp          = 1
+500_supp            = 1
+1.5M_supp           = 1
+3M_supp             = 1
+6M_supp             = 1
+12M_supp            = 1
+MaxTsdr_9.6         = 15
+MaxTsdr_19.2        = 15
+MaxTsdr_45.45       = 15
+MaxTsdr_93.75       = 15
+MaxTsdr_187.5       = 15
+MaxTsdr_500         = 15
+MaxTsdr_1.5M        = 25
+MaxTsdr_3M          = 50
+MaxTsdr_6M          = 100
+MaxTsdr_12M         = 200
+Redundancy          = 0
+Repeater_Ctrl_Sig   = 0
+Implementation_Type = "UART/TI"
+
+
+
+
+
+;======================================================
+; Slave-Specification:
+;======================================================
+Freeze_Mode_supp     = 1           ; device supports freeze mode
+Sync_Mode_supp       = 1           ; device supports sync mode
+Auto_Baud_supp       = 1           ; automatic baud rate recognition
+Set_Slave_Add_supp   = 0           ; not supporting setting slave address
+Min_Slave_Intervall  = 6           ; min cycle time 0.6ms
+Fail_Safe            = 1           ; device accepts failsafe telegrams
+Max_Diag_Data_Len    = 22          ; max length of diagnostic data
+Modular_Station      = 0
+OrderNumber         = "TI SITARA"
+;======================================================
+; Description of extended DP features: 
+;======================================================
+DPV1_Slave=1                       ; device is a DPV1-Slave
+C1_Read_Write_supp = 1             ; Class1 Read/write supported
+C1_Response_Timeout = 25            ; max time for C1 service response = 250ms
+C1_Max_Data_Len = 239              ; max length of user data on C1 communication
+C2_Max_Count_Channels = 2          ; supporting one C2 channel
+C2_Read_Write_supp = 1             ; Class2 Read/write supported
+C2_Response_Timeout = 25           ; max time for C2 service response = 250ms
+C2_Max_Data_Len = 239              ; max length of user data on C2 communication
+C1_Read_Write_required = 0         ; no C1 read or write required for operation
+C2_Read_Write_required = 0         ; no C2 read or write required for operation
+Max_Initiate_PDU_Length = 240      ; max data length on C2 initiate
+Diagnostic_Alarm_supp = 0          ; not supporting diagnostic alarm
+Process_Alarm_supp = 0             ; not supporting process alarm
+Pull_Plug_Alarm_supp = 0           ; not supporting pull/plug alarm
+Status_Alarm_supp = 0              ; not supporting status alarm
+Update_Alarm_supp = 0              ; not supporting update alarm
+Manufacturer_Specific_Alarm_supp = 0  ; Device supports manufacturer spec. alarm
+Extra_Alarm_SAP_supp = 0           ; no use of SAP50 for alarms
+Alarm_Sequence_Mode_Count = 0      ; not supporting alarm sequence mode
+Alarm_Type_Mode_supp=0             ; not supporting alarm type mode
+Diagnostic_Alarm_required = 0      ; device does not require diag alarm handling
+Process_Alarm_required = 0         ; device does not require process alarm handling
+Pull_Plug_Alarm_required = 0       ; device does not require pull/plug alarm handling
+Status_Alarm_required = 0          ; device does not require status alarm handling
+Update_Alarm_required = 0          ; device does not require update alarm handling
+Manufacturer_Specific_Alarm_required = 0  ; device does not require manuf. spec. alarm handling
+DPV1_Data_Types = 0                ; device does not use the extended identifier format
+WD_Base_1ms_supp = 0               ; device uses 10ms time base for watchdog
+Check_Cfg_Mode = 0                 ; no user specific Check_cfg_Mode
+Ident_Maintenance_supp  = 1
+Publisher_supp = 0
+User_Prm_Data_Len          = 3
+User_Prm_Data              = 0x00,0x00,0x00
+; <Module-Definition-List>
+;FixPresetModules    = 1
+
+;User_Prm_Data_Len          = 3
+;User_Prm_Data              = 0x00,0x00,0x00
+;Max_User_Prm_Data_Len      = 3
+;Ext_User_Prm_Data_Const(0) = 0x00,0x00,0x00
+
+
+
+;
+; Module byte-organisiert mit Sendedaten
+;
+;Module = "32 Byte Input, 32 Byte Output" 0x5F,0x6F
+Module = "8 Byte Out, 8 Byte In " 0x17,0x27
+;Module = "240 Byte Out, 240 Byte In " 0x5F,0x5F,0x5F,0x5F,0x5F,0x5F,0x5F,0x57,0x6F,0x6F,0x6F,0x6F,0x6F,0x6F,0x6F,0x67
+;1
+EndModule
+
+
+
+
+
+
