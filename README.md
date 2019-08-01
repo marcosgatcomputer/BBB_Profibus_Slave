@@ -1,7 +1,7 @@
 # BBB Profibus Slave
 Profibus DP Slave on a Beablebone Black SBC running on Ti-RTOS
 
-This repo contains binaries and source (well, actually part of it, the Profibus stack is proprietary and only provided as a library, although you could purchase the sourcce code from the owners for a fee) to run a Profibus slave on a Beaglebone Black single board computer.
+This repo contains instructions to run a Profibus slave on a Beaglebone Black single board computer. No code or binaries are provided due to the export control restrictions of the original Profibus slave package from Texas Instruments (everything is freely available but it can only be downloaded from TI's website after signing up, agreeing to the export conditions and getting the required approval).
 
 [Beaglebone Black](https://beagleboard.org/black) (BBB) is Single Board Computer (SBC) with some advanced features. It runs on a Texas Instruments Sitara(TM) [AM335x processor](http://www.ti.com/processors/sitara-arm/am335x-cortex-a8/overview.html), which is an ARM Core A8 together with some ancillary hardware, including what TI calls PRU-ICSS (programmable real-time subsystem for industrial communication protocols), a fancy name for a two-core microcontroller with nice real time capabilities.
 
