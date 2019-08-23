@@ -1,7 +1,7 @@
 # BBB Profibus Slave
 Profibus DP Slave on a Beablebone Black SBC running on Ti-RTOS
 
-This repo contains instructions to run a Profibus slave on a Beaglebone Black single board computer. No code or binaries are provided due to the export control restrictions of the original Profibus slave package from Texas Instruments (everything is freely available but it can only be downloaded from TI's website after signing up, agreeing to the export conditions and getting the required approval).
+This repo contains instructions to run a Profibus slave on a Beaglebone Black single board computer. No binaries and not all code are provided here due to the export control restrictions of the original Profibus slave package from Texas Instruments (everything is freely available but it can only be downloaded from TI's website after signing up, agreeing to the export conditions and getting the required approval).
 
 [Beaglebone Black](https://beagleboard.org/black) (BBB) is Single Board Computer (SBC) with some advanced features. It runs on a Texas Instruments Sitara(TM) [AM335x processor](http://www.ti.com/processors/sitara-arm/am335x-cortex-a8/overview.html), which is an ARM Core A8 together with some ancillary hardware, including what TI calls PRU-ICSS (programmable real-time subsystem for industrial communication protocols), a fancy name for a two-core microcontroller with nice real time capabilities.
 
@@ -23,10 +23,8 @@ That's where the Beaglebone Black comes into the picture: for 45-55$ for the SBC
 
 ## Let's go for it!
 
-If you just came for the Profibus slave because you need it here and now to test your PLCs you can take the fast route, burn the image on an SD card, copy the binary and have your slave up and running in probably less than five minutes.
-
-But if what you want is to learn, or you need to add features or change the configuration of your slaves, then you need to be a bit more patient: you'll have to setup the environment, make some modifications on TI's Platform Development Kit (PDK), and compile it together with the Profibus stack and sample code. If you are not familiar with TI RTOS (a minimalist real time operating system for TI's Sitara processors) but you know your way around Eclipse or a similar development environment and makefiles and the like, it should not take longer than an afternoon to setup everything. If you did not even understand the previous sentence, no worries, I'm planning to give quite detailed instructions, but it can take significantly longer depending on your skills.
+Unfortunately, binary files have a commercial license and cannot be made availble here. So if you want to run the Profibus Slave you'll have to setup the environment, make some modifications on TI's Platform Development Kit (PDK), and compile it together with the Profibus stack and sample code. If you are not familiar with TI RTOS (a minimalist real time operating system for TI's Sitara processors) but you know your way around Eclipse or a similar development environment and makefiles and the like, it should not take longer than an afternoon to setup everything. If you did not even understand the previous sentence, no worries, I'm planning to give quite detailed instructions, but it can take significantly longer depending on your skills.
 
 ## Credits and disclaimer
 
-As you'll see if you deep digger into the documentation, most of the credit belongs to TI.
+As you'll see if you deep digger into the documentation, most of the credit belongs to TI. Their processors and tools are greatly appreciated.
