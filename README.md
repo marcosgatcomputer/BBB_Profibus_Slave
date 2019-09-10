@@ -25,6 +25,10 @@ That's where the Beaglebone Black comes into the picture: for 45-55$ for the SBC
 
 Unfortunately, binary files have a commercial license and cannot be made availble here. So if you want to run the Profibus Slave you'll have to setup the environment, make some modifications on TI's Platform Development Kit (PDK), and compile it together with the Profibus stack and sample code. If you are not familiar with TI RTOS (a minimalist real time operating system for TI's Sitara processors) but you know your way around Eclipse or a similar development environment and makefiles and the like, it should not take longer than an afternoon to setup everything. If you did not even understand the previous sentence, no worries, I'm planning to give quite detailed instructions, but it can take significantly longer depending on your skills.
 
+Unfortunately, I did not have time to write and explain everything yet, but if you want to have a Profibus Slave (or Master) running on your BBB just head to this two threads: [1](https://e2e.ti.com/support/processors/f/791/p/830896/3080938?tisearch=e2e-sitesearch&keymatch=profibus%2520linux#pi320966=1), [2](https://e2e.ti.com/support/processors/f/791/t/830322?tisearch=e2e-sitesearch&keymatch=profibus%2520master). 
+
+If you still have trouble you are welcome to post an issue.
+
 ## Credits and disclaimer
 
 As you'll see if you deep digger into the documentation, most of the credit belongs to TI. Their processors and tools are greatly appreciated.
